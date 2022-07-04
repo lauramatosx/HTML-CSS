@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <p>A tag CODE é ótima para destacar códigos, faz com o que a fonte fique mono espaçada, ou seja, todas os caracteres ocupam o mesmo espaço.</p>
+    <p>Mas essa tag não cria a formatação de um código, com quebra de linha e identação, para conseguir esse efeito é necessário usar a tag PRE antes da tag CODE.</p>
+    <pre>
+        <code>
+            num = int(input('Digite um número'))
+            if num % 2 = 0;
+                print(f'O número {num} é PAR')
+            else 
+                print(f'O número {num} é IMPAR')
+        </code>
+    </pre>
+    <p>A tag PRE considera toda a formatação feita dentro dela e vai imprimir exatamente desse jeito.</p>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q>.</p>
+    <p>Na frase acima, usamos a tag Q para dizer que é um "quote", uma fala de outra pessoa, uma citação, e automaticamente ele já coloca as aspas na frase.</p>
+    <h2>Citações completas</h2>
+    <p>Para citações maiores, como por exemplo um paragráfo de um livro, é usada a tag BLOCKQUOTE, que vai inserir a formatação e deixando o texto de forma mais deslocada (identada), como pode exemplo:</p>
+    
+    <p>Segundo o autor do livro "O milagra da manhã":</p>
+    <blockquote>
+        Acredito que seja crucial para nós abraçar a perspectiva de que qualquer coisa que outra pessoa
+        tenha superado ou conquistado é simplesmente prova de que tudo — e quero dizer tudo — que
+        precisemos superar ou queiramos conquistar é possível para nós, não importam as circunstâncias
+        passadas ou presentes. O começo é aceitar total responsabilidade por sua vida e recusar-se a culpar
+        outra pessoa. O grau em que você aceita responsabilidade por tudo em sua vida é precisamente o grau
+        de poder pessoal que precisa para mudar ou criar qualquer coisa que queira.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascating Style Sheets">CSS</abbr> e estou adorando!</p>
+    <p>A tag ABBR é usada para colocar o "significado" nas abreviações, assim quando o mouse for passado em cima da palavra, aparece seu significado.</p>
+</body>
+</html>

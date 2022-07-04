@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <p>importante usar imagens de tamanhos diferentes, para que o site se adapte bem em todos os dispositivos e todos os usuários tenham uma boa experiência.</p>
+    <p>a &lt;img&gt; é a imagem base, e os &lt;source&gt;devem ser na ordem de tamanho para que todas as imagens funcionem.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="./imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <p>Essa maneira pode não funcionar em todos os navegadores.</p>
+    <audio src="./midia/nodoubt.mp3" controls autoplay></audio>
+    <!--MP3, WAV, OGG-->
+    <p>Outra maneira de reproduzir audios para que funcione em todos os navegadores: colocando todas as extenções.</p>
+    <audio>
+        <source src="./midia/nodoubt.mp3" type="audio/mpeg">
+        <source src="./midia/nodoubt.ogg" type="audio/ogg">
+        <source src="./midia/nodoubt.wav" type="audio/wav">
+        <p>Inflizmente seu navegador não consegue reproduzir áudio. <a href="./midia/nodoubt.mp3">Clique aqui para baixar o arquivo.</a></p>
+    </audio>
+
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video src="./Pexels-Ivan-Khmelyuk-7222009.webm" width="560" controls></video>
+    <p>Assim como os áudios, é importante colocar mais de uma extenção, para que funcione bem em todos os dispositivos, então o melhor jeito seria:</p>
+    <video width="560" controls loop> <!--é legal também colocar o atributo "poster" com a imagem PNG de capa do vídeo-->
+        <source src="./pexels-ivan-khmelyuk-7222009.mp4" type="video/mp4">
+        <source src="./Pexels-Ivan-Khmelyuk-7222009.mkv" type="video/mkv">
+        <source src="./Pexels-Ivan-Khmelyuk-7222009.webm" type="video/mkv">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <p>Escolher o vídeo no Youtube, clicar em 'compartilhar' e 'incorporar' copiar o código:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/191894507?h=e15bf4bcf0&color=ffffff&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
